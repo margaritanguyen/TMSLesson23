@@ -1,0 +1,33 @@
+﻿@model TMSLesson23.Models.Book
+@{
+    ViewData["Title"] = "Create book";
+}
+
+<form method="post">
+    <div class="container">
+        <h1 class="h3 mb-3 fw-normal">New book</h1>
+        <div>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="Name" required="">
+            <div class="invalid-feedback">
+                Book name required
+            </div>
+        </div>
+        <div>
+            <label for="author" class="form-label">Author</label>
+            <input type="text" class="form-control" id="author" name="Author" required="">
+            <div class="invalid-feedback">
+                Author name required
+            </div>
+        </div>
+        <div>
+            <label for="year" class="form-label">Year</label>
+            <input type="text" class="form-control" id="year" name="year" required>
+            <div class="invalid-feedback">
+                Year required
+            </div>
+        </div>
+        <hr class="my-4">
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Добавить</button>
+    </div>
+</form>
